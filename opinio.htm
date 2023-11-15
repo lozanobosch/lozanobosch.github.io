@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+<TITLE>opinio</TITLE> <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') {
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (val<min || max<val) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF" LEFTMARGIN="5" TOPMARGIN="1" LINK="#FFFFFF" VLINK="#FFFFFF" ALINK="#FFFFFF">
+<TABLE WIDTH="773" BORDER="0" CELLSPACING="0" CELLPADDING="2" BGCOLOR="#C81818">
+  <TR> 
+    <TD WIDTH="60" bgcolor="#990000">&nbsp;</TD>
+    <TD WIDTH="89" bgcolor="#990000"> 
+      <div align="center"><a href="http://www.xtec.cat/~sgiralt/ianua.htm" target="_top"><img src="principal.gif" width="54" height="30" border="0"></a></div>
+    </TD>
+    <TD WIDTH="79" bgcolor="#990000">&nbsp;</TD>
+    <TD WIDTH="524" bgcolor="#990000"> 
+      <DIV ALIGN="CENTER"><B><FONT FACE="Palatino Linotype" SIZE="4">CONTACTE</FONT></B></DIV>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ROWSPAN="2" colspan="3"> 
+      <DIV ALIGN="CENTER"></DIV>
+    </TD>
+    <TD WIDTH="524">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD WIDTH="524"><font face="Arial, Helvetica, sans-serif"><B>Si vols posar-te 
+      en contacte amb l'autor del web (Sebasti&agrave; Giralt), pots escriure 
+      a <A HREF="mailto:sgiralt@gmail.com">l'adre&ccedil;a electr&ograve;nica 
+      (e-mail)</A> o omplir el formulari seg&uuml;ent:</B></font></TD>
+  </TR>
+  <TR> 
+    <TD colspan="3"><img src="mercuri.gif" width="228" height="436"></TD>
+    <TD WIDTH="524" valign="middle"> 
+      <FORM NAME="form1" METHOD="post" ACTION="mailto:sgiralt@gmail.com?Subject=questionari" enctype="text/plain" onSubmit="MM_validateForm('nom','','R','correu','','NisEmail');return document.MM_returnValue">
+        <TABLE WIDTH="523" BORDER="0" CELLSPACING="0" CELLPADDING="10">
+          <TR> 
+            <TD COLSPAN="2"> 
+              <DIV ALIGN="RIGHT"><font face="Arial, Helvetica, sans-serif"><B>Nom 
+                i cognoms</B></font></DIV>
+            </TD>
+            <TD WIDTH="209"><font face="Arial, Helvetica, sans-serif"> 
+              <INPUT TYPE="text" NAME="nom" SIZE="40">
+              </font></TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="2"> 
+              <div align="right"><b><font face="Arial, Helvetica, sans-serif">Perfil 
+                professional o d'estudis</font></b></div>
+            </TD>
+            <TD WIDTH="209"> 
+              <select name="perfil">
+                <option value="1" selected>estudiant de secund&agrave;ria</option>
+                <option value="2">estudiant universitari</option>
+                <option value="3">professor de secund&agrave;ria</option>
+                <option value="4">professor universitari</option>
+                <option value="5">altres de l'&agrave;mbit educatiu</option>
+                <option value="6">&agrave;mbit de la recerca</option>
+                <option value="7">fora del m&oacute;n educatiu</option>
+              </select>
+            </TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="2"> 
+              <div align="right"><b><font face="Arial, Helvetica, sans-serif">Connectat 
+                des de (poblaci&oacute;)</font></b></div>
+            </TD>
+            <TD WIDTH="209"> 
+              <input type="text" name="poblaci&oacute;" size="40">
+            </TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="2"> 
+              <DIV ALIGN="RIGHT"><font face="Arial, Helvetica, sans-serif"><B>Correu 
+                electr&ograve;nic (e-mail)</B></font></DIV>
+            </TD>
+            <TD WIDTH="209"> 
+              <P><font face="Arial, Helvetica, sans-serif"> 
+                <INPUT TYPE="text" NAME="correu" SIZE="40">
+                </font></P>
+            </TD>
+          </TR>
+          <TR> 
+            <TD ALIGN="LEFT" VALIGN="middle" COLSPAN="2" height="37"> 
+              <DIV ALIGN="RIGHT"> 
+                <P><font face="Arial, Helvetica, sans-serif"><B>Valoraci&oacute; 
+                  del web</B></font></P>
+              </DIV>
+            </TD>
+            <TD WIDTH="209" height="37"><font face="Arial, Helvetica, sans-serif"> 
+              <SELECT NAME="valoraci&oacute;" COLS="35">
+                <OPTION VALUE="1" selected>molt malament</OPTION>
+                <OPTION VALUE="2">malament</OPTION>
+                <OPTION VALUE="3">passable</OPTION>
+                <OPTION VALUE="4">b&eacute;</OPTION>
+                <OPTION VALUE="5">molt b&eacute;</OPTION>
+              </SELECT>
+              </font></TD>
+          </TR>
+          <TR> 
+            <TD ALIGN="LEFT" VALIGN="TOP" COLSPAN="2"> 
+              <DIV ALIGN="RIGHT"><font face="Arial, Helvetica, sans-serif"><B>Comentaris</B></font></DIV>
+            </TD>
+            <TD WIDTH="209"><font face="Arial, Helvetica, sans-serif"> 
+              <TEXTAREA NAME="comentaris" WRAP="VIRTUAL" COLS="30"></TEXTAREA>
+              </font></TD>
+          </TR>
+          <TR> 
+            <TD WIDTH="62" ALIGN="LEFT" VALIGN="TOP">&nbsp;</TD>
+            <TD WIDTH="192" ALIGN="LEFT" VALIGN="TOP">&nbsp;</TD>
+            <TD WIDTH="209"><font face="Arial, Helvetica, sans-serif"> 
+              <INPUT TYPE="submit" VALUE="Envia">
+              </font></TD>
+          </TR>
+        </TABLE>
+      </FORM>
+      <P><font face="Arial, Helvetica, sans-serif"><b>Agrair&eacute; que m'envieu 
+        opinions, comentaris, observacions, suggeriments, not&iacute;cies que 
+        vulgueu donar a con&egrave;ixer (activitats, novetats, informacions diverses) 
+        i webs i enlla&ccedil;os interessants. Espero la col&middot;laboraci&oacute; 
+        de tothom!</b></font></P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD colspan="3">&nbsp;</TD>
+    <TD WIDTH="524" valign="middle">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD colspan="4" bgcolor="#EBECF5"> 
+      <div align="center"><a href="http://www.xtec.cat/~sgiralt/ianua.htm" target="_top"><img src="labtril3.gif" width="301" height="14" border="0"></a></div>
+    </TD>
+  </TR>
+</TABLE> 
+</BODY>
+</HTML>
